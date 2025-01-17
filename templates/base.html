@@ -312,6 +312,83 @@
         .btn {
             font-weight: 600;
         }
+
+        /* 修改 feedback 按钮样式 */
+        .feedback-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .feedback-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* 修改 feedback 模态框样式 */
+        #feedback-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+
+        #feedback-modal .modal-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 400px;
+            margin: 10% auto;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        #feedback-modal textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Nunito', sans-serif;
+            box-sizing: border-box;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        #feedback-modal textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(98, 163, 255, 0.1);
+        }
+
+        #feedback-modal h2 {
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+
+        #feedback-modal .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -369,20 +446,25 @@
 
     {% block content %}{% endblock %}
 
-    <div id="feedback-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
-        <div style="background: white; padding: 2rem; border-radius: 16px; width: 80%; max-width: 500px; margin: 10% auto;">
+    <!-- 修改 Feedback Modal -->
+    <div id="feedback-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideFeedback()">&times;</span>
             <h2>Share Your Feedback</h2>
             <form method="POST" action="{{ url_for('submit_feedback') }}">
                 <div class="form-group">
-                    <textarea name="content" rows="4" style="width: 100%; padding: 10px; border: 2px solid #e9ecef; border-radius: 8px;" required placeholder="Tell us what you think..."></textarea>
+                    <textarea name="content" required placeholder="Tell us what you think..."></textarea>
                 </div>
-                <div style="text-align: right; margin-top: 1rem;">
-                    <button type="button" onclick="hideFeedback()" class="btn" style="margin-right: 10px;">Cancel</button>
+                <div class="button-group">
+                    <button type="button" onclick="hideFeedback()" class="btn">Cancel</button>
                     <button type="submit" class="btn">Submit</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- 修改 Feedback 按钮 -->
+    <button onclick="showFeedback()" class="feedback-btn">💭 Feedback</button>
 
     <script>
     function showModal(modalId) {
