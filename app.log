@@ -291,3 +291,56 @@
 2025-01-17 16:53:11,662 INFO: 127.0.0.1 - - [17/Jan/2025 16:53:11] "GET / HTTP/1.1" 200 -
 2025-01-17 16:53:16,647 INFO: 127.0.0.1 - - [17/Jan/2025 16:53:16] "[32mPOST /feedback HTTP/1.1[0m" 302 -
 2025-01-17 16:53:16,652 INFO: 127.0.0.1 - - [17/Jan/2025 16:53:16] "GET / HTTP/1.1" 200 -
+2025-01-17 17:23:17,973 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 17:23:17,973 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 17:23:17,974 INFO:  * Restarting with stat
+2025-01-17 17:23:18,307 WARNING:  * Debugger is active!
+2025-01-17 17:23:18,315 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 17:23:20,135 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:20] "GET / HTTP/1.1" 200 -
+2025-01-17 17:23:21,414 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:21] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:23:23,400 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 17:23:23,405 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:23] "GET / HTTP/1.1" 200 -
+2025-01-17 17:23:25,191 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:25] "[32mGET /story-generator HTTP/1.1[0m" 302 -
+2025-01-17 17:23:25,206 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:25] "GET /login?next=/story-generator HTTP/1.1" 200 -
+2025-01-17 17:23:35,308 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:35] "[32mPOST /feedback HTTP/1.1[0m" 302 -
+2025-01-17 17:23:35,316 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:35] "GET /login?next=/feedback HTTP/1.1" 200 -
+2025-01-17 17:23:36,659 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:36] "[32mPOST /login?next=/feedback HTTP/1.1[0m" 302 -
+2025-01-17 17:23:36,663 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:36] "GET / HTTP/1.1" 200 -
+2025-01-17 17:23:43,650 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:43] "[32mPOST /feedback HTTP/1.1[0m" 302 -
+2025-01-17 17:23:43,652 INFO: 127.0.0.1 - - [17/Jan/2025 17:23:43] "GET / HTTP/1.1" 200 -
+2025-01-17 17:24:05,920 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:05] "[32mPOST /feedback HTTP/1.1[0m" 302 -
+2025-01-17 17:24:05,925 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:05] "GET / HTTP/1.1" 200 -
+2025-01-17 17:24:31,008 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:31] "[32mPOST /feedback HTTP/1.1[0m" 302 -
+2025-01-17 17:24:31,011 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:31] "GET / HTTP/1.1" 200 -
+2025-01-17 17:24:45,564 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 17:24:45,569 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:45] "GET / HTTP/1.1" 200 -
+2025-01-17 17:24:47,703 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-17 17:24:47,706 INFO: 127.0.0.1 - - [17/Jan/2025 17:24:47] "GET / HTTP/1.1" 200 -
+2025-01-17 17:27:42,752 INFO: 127.0.0.1 - - [17/Jan/2025 17:27:42] "GET / HTTP/1.1" 200 -
+2025-01-17 17:28:11,289 INFO: 127.0.0.1 - - [17/Jan/2025 17:28:11] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:28:34,246 INFO: 127.0.0.1 - - [17/Jan/2025 17:28:34] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:28:35,372 INFO: 127.0.0.1 - - [17/Jan/2025 17:28:35] "POST /story-generator HTTP/1.1" 200 -
+2025-01-17 17:29:43,720 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 17:29:43,720 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 17:29:43,721 INFO:  * Restarting with stat
+2025-01-17 17:29:44,028 WARNING:  * Debugger is active!
+2025-01-17 17:29:44,037 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 17:29:47,498 INFO: 127.0.0.1 - - [17/Jan/2025 17:29:47] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:29:51,887 INFO: 127.0.0.1 - - [17/Jan/2025 17:29:51] "GET / HTTP/1.1" 200 -
+2025-01-17 17:29:57,108 INFO: 127.0.0.1 - - [17/Jan/2025 17:29:57] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:29:58,511 INFO: 127.0.0.1 - - [17/Jan/2025 17:29:58] "POST /story-generator HTTP/1.1" 200 -
+2025-01-17 17:30:01,446 INFO: 127.0.0.1 - - [17/Jan/2025 17:30:01] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:30:55,913 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 17:30:55,913 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 17:30:55,914 INFO:  * Restarting with stat
+2025-01-17 17:30:56,238 WARNING:  * Debugger is active!
+2025-01-17 17:30:56,249 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 17:30:58,246 INFO: 127.0.0.1 - - [17/Jan/2025 17:30:58] "GET / HTTP/1.1" 200 -
+2025-01-17 17:30:59,600 INFO: 127.0.0.1 - - [17/Jan/2025 17:30:59] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:31:01,156 INFO: 127.0.0.1 - - [17/Jan/2025 17:31:01] "GET / HTTP/1.1" 200 -
+2025-01-17 17:31:01,886 INFO: 127.0.0.1 - - [17/Jan/2025 17:31:01] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 17:31:02,935 INFO: 127.0.0.1 - - [17/Jan/2025 17:31:02] "POST /story-generator HTTP/1.1" 200 -
+2025-01-17 17:31:03,905 INFO: 127.0.0.1 - - [17/Jan/2025 17:31:03] "GET / HTTP/1.1" 200 -

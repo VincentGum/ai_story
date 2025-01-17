@@ -77,7 +77,7 @@
 
         .feature-card:hover {
             transform: translateY(-5px);
-            border: 2px solid var(--accent);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
 
         .feature-icon {
@@ -173,7 +173,6 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             font-size: 1.2rem;
             line-height: 1.8;
-            border: 2px solid var(--accent);
         }
 
         .home-btn {
@@ -188,6 +187,14 @@
             text-decoration: none;
             font-weight: 600;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .form-group select:focus,
@@ -392,6 +399,12 @@
     </style>
 </head>
 <body>
+    {% if request.endpoint != 'home' %}
+    <a href="{{ url_for('home') }}" class="home-btn">
+        <span style="margin-right: 8px;">🏠</span>Home
+    </a>
+    {% endif %}
+
     <div class="nav-container">
         {% if current_user.is_authenticated %}
             <span style="color: white; margin-right: 1rem;">Hello, {{ current_user.name }}!</span>
