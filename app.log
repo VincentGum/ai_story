@@ -153,3 +153,29 @@
 2025-01-17 16:21:49,525 INFO: 127.0.0.1 - - [17/Jan/2025 16:21:49] "GET / HTTP/1.1" 200 -
 2025-01-17 16:22:18,279 INFO: 127.0.0.1 - - [17/Jan/2025 16:22:18] "GET /story-generator HTTP/1.1" 200 -
 2025-01-17 16:22:20,608 INFO: 127.0.0.1 - - [17/Jan/2025 16:22:20] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 16:32:12,535 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:32:12,535 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:32:12,536 INFO:  * Restarting with stat
+2025-01-17 16:32:12,951 WARNING:  * Debugger is active!
+2025-01-17 16:32:12,993 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:32:14,496 INFO: 127.0.0.1 - - [17/Jan/2025 16:32:14] "GET / HTTP/1.1" 200 -
+2025-01-17 16:33:43,248 INFO: 127.0.0.1 - - [17/Jan/2025 16:33:43] "GET / HTTP/1.1" 200 -
+2025-01-17 16:34:09,811 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:34:09,811 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:34:09,818 INFO:  * Restarting with stat
+2025-01-17 16:34:10,155 WARNING:  * Debugger is active!
+2025-01-17 16:34:10,188 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:34:12,473 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:12] "GET / HTTP/1.1" 200 -
+2025-01-17 16:34:14,092 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:14] "GET / HTTP/1.1" 200 -
+2025-01-17 16:34:15,865 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:15] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 16:34:17,923 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:17] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 16:34:54,980 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:34:54,980 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:34:54,981 INFO:  * Restarting with stat
+2025-01-17 16:34:55,357 WARNING:  * Debugger is active!
+2025-01-17 16:34:55,368 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:34:58,669 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:58] "GET / HTTP/1.1" 200 -
+2025-01-17 16:35:00,074 INFO: 127.0.0.1 - - [17/Jan/2025 16:35:00] "GET /story-generator HTTP/1.1" 200 -
