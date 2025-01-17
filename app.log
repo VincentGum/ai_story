@@ -179,3 +179,73 @@
 2025-01-17 16:34:55,368 INFO:  * Debugger PIN: 131-479-483
 2025-01-17 16:34:58,669 INFO: 127.0.0.1 - - [17/Jan/2025 16:34:58] "GET / HTTP/1.1" 200 -
 2025-01-17 16:35:00,074 INFO: 127.0.0.1 - - [17/Jan/2025 16:35:00] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 16:37:41,377 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:37:41,378 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:37:41,379 INFO:  * Restarting with stat
+2025-01-17 16:37:41,725 WARNING:  * Debugger is active!
+2025-01-17 16:37:41,735 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:37:43,695 INFO: 127.0.0.1 - - [17/Jan/2025 16:37:43] "GET / HTTP/1.1" 200 -
+2025-01-17 16:37:58,676 INFO: 127.0.0.1 - - [17/Jan/2025 16:37:58] "GET /story-generator HTTP/1.1" 200 -
+2025-01-17 16:39:48,004 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:39:48,005 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:39:48,005 INFO:  * Restarting with stat
+2025-01-17 16:39:48,333 WARNING:  * Debugger is active!
+2025-01-17 16:39:48,344 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:39:50,148 INFO: 127.0.0.1 - - [17/Jan/2025 16:39:50] "GET / HTTP/1.1" 200 -
+2025-01-17 16:39:52,174 INFO: 127.0.0.1 - - [17/Jan/2025 16:39:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 16:39:52,178 INFO: 127.0.0.1 - - [17/Jan/2025 16:39:52] "GET / HTTP/1.1" 200 -
+2025-01-17 16:39:54,303 INFO: 127.0.0.1 - - [17/Jan/2025 16:39:54] "GET /signup HTTP/1.1" 200 -
+2025-01-17 16:39:59,383 INFO: 127.0.0.1 - - [17/Jan/2025 16:39:59] "GET /login HTTP/1.1" 200 -
+2025-01-17 16:40:02,387 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-17 16:40:02,390 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:02] "GET / HTTP/1.1" 200 -
+2025-01-17 16:40:05,907 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 16:40:05,918 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:05] "GET / HTTP/1.1" 200 -
+2025-01-17 16:40:08,904 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:08] "GET /login HTTP/1.1" 200 -
+2025-01-17 16:40:10,156 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-17 16:40:10,159 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:10] "GET / HTTP/1.1" 200 -
+2025-01-17 16:40:12,051 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 16:40:12,056 INFO: 127.0.0.1 - - [17/Jan/2025 16:40:12] "GET / HTTP/1.1" 200 -
+2025-01-17 16:41:21,627 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:21] "[32mGET /story-generator HTTP/1.1[0m" 302 -
+2025-01-17 16:41:21,635 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:21] "GET /login?next=/story-generator HTTP/1.1" 200 -
+2025-01-17 16:41:22,954 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:22] "[32mPOST /login?next=/story-generator HTTP/1.1[0m" 302 -
+2025-01-17 16:41:22,958 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:22] "GET / HTTP/1.1" 200 -
+2025-01-17 16:41:24,380 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 16:41:24,385 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:24] "GET / HTTP/1.1" 200 -
+2025-01-17 16:41:26,441 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:26] "GET /signup HTTP/1.1" 200 -
+2025-01-17 16:41:27,741 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:27] "GET /login HTTP/1.1" 200 -
+2025-01-17 16:41:29,249 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:29] "GET /signup HTTP/1.1" 200 -
+2025-01-17 16:41:31,536 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:31] "GET /login HTTP/1.1" 200 -
+2025-01-17 16:41:32,294 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:32] "GET /signup HTTP/1.1" 200 -
+2025-01-17 16:41:32,885 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:32] "GET /login HTTP/1.1" 200 -
+2025-01-17 16:41:34,966 INFO: ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: login
+2025-01-17 16:41:34,967 INFO: 127.0.0.1 - - [17/Jan/2025 16:41:34] "[31m[1mGET /login HTTP/1.1[0m" 429 -
+2025-01-17 16:42:08,578 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:42:08,578 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:42:08,585 INFO:  * Restarting with stat
+2025-01-17 16:42:08,994 WARNING:  * Debugger is active!
+2025-01-17 16:42:09,009 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:42:10,616 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:10] "GET /signup HTTP/1.1" 200 -
+2025-01-17 16:42:11,957 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:11] "GET / HTTP/1.1" 200 -
+2025-01-17 16:42:21,759 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-17 16:42:21,764 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:21] "GET / HTTP/1.1" 200 -
+2025-01-17 16:42:24,442 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-01-17 16:42:24,447 INFO: 127.0.0.1 - - [17/Jan/2025 16:42:24] "GET / HTTP/1.1" 200 -
+2025-01-17 16:43:08,412 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:43:08,412 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:43:08,413 INFO:  * Restarting with stat
+2025-01-17 16:43:08,773 WARNING:  * Debugger is active!
+2025-01-17 16:43:08,814 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:43:10,370 INFO: 127.0.0.1 - - [17/Jan/2025 16:43:10] "GET / HTTP/1.1" 200 -
+2025-01-17 16:44:24,883 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-17 16:44:24,883 INFO: [33mPress CTRL+C to quit[0m
+2025-01-17 16:44:24,884 INFO:  * Restarting with stat
+2025-01-17 16:44:25,228 WARNING:  * Debugger is active!
+2025-01-17 16:44:25,237 INFO:  * Debugger PIN: 131-479-483
+2025-01-17 16:44:28,569 INFO: 127.0.0.1 - - [17/Jan/2025 16:44:28] "GET / HTTP/1.1" 200 -
+2025-01-17 16:44:36,072 INFO: 127.0.0.1 - - [17/Jan/2025 16:44:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-17 16:44:36,077 INFO: 127.0.0.1 - - [17/Jan/2025 16:44:36] "GET / HTTP/1.1" 200 -
