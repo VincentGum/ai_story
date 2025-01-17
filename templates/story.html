@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Your Story{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Your Magical Story</h1>
+    <p>A unique tale created just for your little one</p>
+</div>
+
+<div class="container">
+    <div class="story">
+        {{ story }}
+    </div>
+    
+    {% if images %}
+    <div class="features" style="margin-top: 2rem;">
+        {% for image in images %}
+        <div class="feature-card">
+            <img src="{{ image }}" alt="Story illustration" style="width: 100%; border-radius: 8px;">
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <div style="text-align: center; margin: 3rem 0;">
+        <a href="{{ url_for('story_generator') }}" class="btn">Create Another Story 🎨</a>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}View Feedback{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 style="margin-bottom: 2rem;">User Feedback</h1>
+    
+    <div class="feedback-list">
+        {% for feedback in feedbacks %}
+        <div class="feedback-item">
+            <div class="feedback-header">
+                <span class="feedback-user">{{ feedback.user.name }}</span>
+                <span class="feedback-date">{{ feedback.created_at.strftime('%Y-%m-%d %H:%M') }}</span>
+            </div>
+            <div class="feedback-content">
+                {{ feedback.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .feedback-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .feedback-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .feedback-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        color: #666;
+        font-size: 0.9rem;
+    }
+    
+    .feedback-user {
+        font-weight: 600;
+        color: var(--primary);
+    }
+    
+    .feedback-content {
+        line-height: 1.6;
+        white-space: pre-wrap;
+    }
+</style>
+{% endblock %} 

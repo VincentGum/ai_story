@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Create Story{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Create Your Story</h1>
+    <p>Customize your story settings to create the perfect tale for your little one.</p>
+</div>
+
+<div class="container">
+    <div class="story-form">
+        <form method="POST">
+            <div class="form-group">
+                <label>Main Character:</label>
+                <select name="character_type">
+                    <option value="animal">Friendly Animal</option>
+                    <option value="fairy">Magical Fairy</option>
+                    <option value="hero">Brave Hero/Heroine</option>
+                    <option value="wizard">Wise Wizard</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Story Length:</label>
+                <select name="story_length">
+                    <option value="short">Short (Perfect for bedtime)</option>
+                    <option value="medium">Medium (Great for story time)</option>
+                    <option value="long">Long (Perfect for weekend reading)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Story Theme:</label>
+                <select name="story_theme">
+                    <option value="friendship">Friendship & Kindness</option>
+                    <option value="adventure">Exciting Adventure</option>
+                    <option value="learning">Learning & Growing</option>
+                    <option value="magic">Magical Discovery</option>
+                </select>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Create Story 🌟</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %} 

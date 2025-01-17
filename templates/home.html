@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Create Magical Stories for Your Little Ones</h1>
+    <p>Use our AI-powered story generator to create unique, engaging, and educational stories that will spark your child's imagination.</p>
+    <div style="margin-top: 2rem;">
+        <a href="{{ url_for('story_generator') }}" class="btn btn-large">Start Creating Magic ✨</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Personalized Stories</h3>
+            <p>Create stories tailored to your child's interests and age, making reading time more engaging and fun.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Educational Value</h3>
+            <p>Each story includes moral lessons and educational elements to help your child learn while having fun.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🍭</div>
+            <h3>Beautiful Illustrations</h3>
+            <p>Colorful AI-generated illustrations bring each story to life, capturing your child's imagination.</p>
+        </div>
+    </div>
+</div>
+
+<button class="feedback-btn" onclick="showFeedback()">�� Feedback</button>
+{% endblock %} 
