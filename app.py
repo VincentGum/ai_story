@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from models import db, User, Feedback
 import os
@@ -38,43 +38,35 @@ def load_user(user_id):
 with app.app_context():
     db.create_all()
 
-@app.route('/signup', methods=['GET', 'POST'])
+@app.route('/signup', methods=['POST'])
 def signup():
-    if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-        name = request.form.get('name')
+    email = request.form.get('email')
+    password = request.form.get('password')
+    name = request.form.get('name')
 
-        if User.query.filter_by(email=email).first():
-            flash('Email already registered')
-            return redirect(url_for('signup'))
+    if User.query.filter_by(email=email).first():
+        return jsonify({'status': 'error', 'message': 'Email already registered'})
 
-        user = User(email=email, name=name)
-        user.set_password(password)
-        db.session.add(user)
-        db.session.commit()
+    user = User(email=email, name=name)
+    user.set_password(password)
+    db.session.add(user)
+    db.session.commit()
 
-        login_user(user)
-        return redirect(url_for('home'))
+    login_user(user)
+    return jsonify({'status': 'success'})
 
-    return render_template('signup.html')
-
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 @limiter.limit("5 per minute")
 def login():
-    if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-        user = User.query.filter_by(email=email).first()
+    email = request.form.get('email')
+    password = request.form.get('password')
+    user = User.query.filter_by(email=email).first()
 
-        if user and user.check_password(password):
-            login_user(user)
-            return redirect(url_for('home'))
-        
-        flash('Invalid email or password')
-        return redirect(url_for('login'))
-
-    return render_template('login.html')
+    if user and user.check_password(password):
+        login_user(user)
+        return jsonify({'status': 'success'})
+    
+    return jsonify({'status': 'error', 'message': 'Invalid email or password'}), 401
 
 @app.route('/logout')
 @login_required

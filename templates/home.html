@@ -7,7 +7,11 @@
     <h1>Create Magical Stories for Your Little Ones</h1>
     <p>Use our AI-powered story generator to create unique, engaging, and educational stories that will spark your child's imagination.</p>
     <div style="margin-top: 2rem;">
-        <a href="{{ url_for('story_generator') }}" class="btn btn-light">Start Creating Magic ✨</a>
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('story_generator') }}" class="btn btn-light">Start Creating Magic ✨</a>
+        {% else %}
+            <button onclick="showModal('loginModal')" class="btn btn-light">Start Creating Magic ✨</button>
+        {% endif %}
     </div>
 </div>
 
